@@ -9,7 +9,7 @@ WHERE ship_country LIKE 'P%'
 ORDER BY freight DESC
 LIMIT 10
 
--- 3. фамилию и телефон сотрудников, у которых в данных отсутствует регион (см таблицу employees)
+-- 3. фамилию, имя и телефон сотрудников, у которых в данных отсутствует регион (см таблицу employees)
 SELECT first_name, last_name, home_phone FROM employees
 WHERE region IS NULL
 
